@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo{
+    background-image: url(./../rohith.jpg);
+    border: 2px solid rgb(213, 213, 213);
+    border-radius:50% ;
+    filter: saturate(0.3);
+    height: 50px;
+    width: 50px;
+    background-position: center;
+    background-size: cover;
+    
+}
+.logo:hover{
+    height: 70px;
+    width: 70px;
+    border-radius:50% ;
+}
+.main-header{
+    background-color: #333;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a{
+   text-align: center;
+    color: white;
+    text-decoration: none;
+    display: flex;
+}
+a:hover{
+
+    color: yellow
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+.logo-name{
+    color: white;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-left: 10px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    animation: revealText 4s steps(26) infinite ;
+    width: 0;
+}
+
+@keyframes revealText {
+    0% {
+        width: 0; 
+        color: white;
+    }
+    25% {
+        width: 76%;
+        color: rgb(112, 200, 193); 
+    }
+    30% {
+        width: 76%; 
+        color: rgb(233, 237, 105);
+    }
+    100% {
+        width: 0; 
+        color: rgb(224, 160, 209); 
+    }
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 1.0rem;
+    font-weight: bold;
+}
+li{
+    margin-right:30px;
+}
+.child{
+    position: relative;
+    transition: color 0.3s ease;
+} 
+
+
+.child::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; 
+    height: 2px; 
+    background-color: rgb(212, 224, 49); 
+    transition: width 1.0s ease; 
+}
+
+.child:hover::after {
+    width: 100%; 
+}
+body{
+    background-image: linear-gradient(to right, #333 , rgb(144, 180, 194));
+    background-position: center;
+    background-size: cover;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+h1{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+.brief-about{
+    margin-top: 200px;
+    text-align: center;
+}
+.brief-about p{
+    font-size: 30px;
+    color:white;
+}
+.brief-about h1{
+    display: inline;
+    letter-spacing: 2px;
+}
+
+#name{
+    color: yellow;
+    text-shadow: 
+                1px 1px 4px rgba(0, 0, 0, 0.9),
+                -1px -1px 4px rgba(0, 0, 0, 0.9);
+}
+#name:hover{
+    color: red;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    animation: revealText 4s steps(26) infinite ;
+    width: 0;
+}
+#eng-Quote{
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: #00e6e6;
+    font-weight: bold;
+    text-shadow: 
+                1px 1px 4px rgba(0, 0, 0, 0.9),
+                -1px -1px 4px rgba(0, 0, 0, 0.9);
+}
+#kan-quote{
+    color: #e6e600;
+    font-size: 25px;
+    line-height: 60px;
+    font-family: Grey+Qo;
+    font-weight: bold;
+    text-shadow: 
+                1px 1px 4px rgba(0, 0, 0, 0.9),
+                -1px -1px 4px rgba(0, 0, 0, 0.9);
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .main1{
+            margin-top:50px ;
+            border: 1px solid black;
+            height: 500px;
+            width: 600px;
+        }
+        .part1{
+            margin: 20px;
+            padding: 20px;
+            height: 100px;
+            width: 100px;
+            display: inline-block;/*inline block used for it behaves like inline but it accept to set margin , height , width like block 
+                                    in inline we cant set height,width,margin(it sets only horizontally like margin-left and margin-right */
+            background-color: yellow;
+     
+        }
+        .part2{
+            margin: 20px;
+            padding: 20px;
+            height: 100px;
+            width: 100px;
+            display: inline-block;
+            background-color: yellow;
+            position: absolute;
+            left: 50px;
+            top: 200px;
+        }
+        .part3{
+            margin: 20px;
+            padding: 20px;
+            height: 100px;
+            width: 100px;
+            display: inline-block;
+            background-color: yellow;
+
+        }
+    </style>
+    <title>Rohith</title>
+</head>
+<body>
+    <div class="main1">
+        <div1 class="part1"></div1>
+        <div2 class="part2"></div2>
+        <div3 class="part3"></div3>
+    </div>
+    <table border="5"  align="center" bgcolor="yellow" cellpadding="10" cellspacing="5">
+        <thead>
+            <tr>
+                <th>Head1</th>
+                <th>Head2</th>
+                <th>Head3</th>
+            </tr>
+        </thead>
+        <tbody align="center">
+            <tr>
+                <td>cell1</td>
+                <td colspan="2" >Cell2</td>
+                
+            </tr>
+            <tr>
+                <td>cell 4</td>
+                <td>cell 5</td>
+                <td rowspan="2">cell 6</td>
+            </tr>
+            <tr>
+                <td>cell 6</td>
+                <td>cell 7</td>
+            </tr>
+        </tbody>
+    </table>
+    <form>
+        <fieldset>
+            <legend>practice section</legend>
+            Name:<input type="text" name="name" value="King" autofocus="" required="" readonly="">
+            <br/>
+            <br/>
+            Address:<textarea name="address" placeholder="Address"></textarea>
+            <br/>
+            <br/>
+            Gender:<input type="radio" value="M" name="Gender">Male
+            <input type="radio" value="F" name="Gender">Female
+            <br>
+            <br>
+            State:<select name="state">
+                <optgroup label="south">
+                    <option>Karnataka</option>
+                    <option>kerala</option>
+                    <option>Andhra</option>
+                </optgroup>
+                <optgroup label="North">
+                    <option>J&K</option>
+                    <option>Ladakh</option>
+                    <option>jjdkj</option>
+                </optgroup>
+            </select>
+            <br>
+            <br>
+           hobbies: <input type="checkbox" name="hobbies">volleyball
+           <input type="checkbox" value="kabaddi" name="hobbies">Kabbadi
+           <input type="checkbox" value="chess"  name="hobbies">chess
+           <br>
+           <br>
+           Resume:<input type="file" name="resume">
+           <br>
+           <br>
+           Color:<input type="color" value="#ff00ff" name="color"><br>
+           <br>
+           email:<input type="email" name="email"><br>
+           <br>
+           Age:<input type="number" name="age" min="18" max="30"><br>
+           <br>
+            password:<input type="password" name="password">
+            <br><br>
+            pinNum:<input type="hidden"  name="pin"><br>
+            <br>
+            Date<input type="date" name="date">
+            <br>
+            <br>
+            <input type="submit" ></input>
+            <input type="reset" ></input>
+        </fieldset>
+    </form>
+
+</body>
+</html>
