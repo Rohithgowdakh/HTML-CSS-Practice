@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Complete CSS Grid Example</title>
+<style>
+  /* Grid Container */
+  .container {
+    display: grid; /* Defines a grid container */
+    grid-template-columns: 1fr 2fr 1fr; /* 3 columns: 1fr, 2fr, 1fr */
+    grid-template-rows: 100px 1fr 100px; /* 3 rows: fixed, flexible, fixed */
+    gap: 20px; /* Space between grid items */
+    grid-template-areas: 
+      "header header header"
+      "sidebar content content"
+      "footer footer footer";
+    height: 100vh; /* Full viewport height */
+    justify-items: stretch; /* Stretches items to fill available space horizontally */
+    align-items: stretch; /* Stretches items to fill available space vertically */
+  }
+
+  /* Grid Items */
+  .header {
+    grid-area: header; /* Assigns this element to the 'header' area */
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sidebar {
+    grid-area: sidebar; /* Assigns this element to the 'sidebar' area */
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content {
+    grid-area: content; /* Assigns this element to the 'content' area */
+    background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer {
+    grid-area: footer; /* Assigns this element to the 'footer' area */
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Individual Grid Item Styling */
+  .item {
+    padding: 10px; /* Padding inside each grid item */
+    border: 2px solid #333; /* Border around each item for visibility */
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header item">Header</div>
+  <div class="sidebar item">Sidebar</div>
+  <div class="content item">Content</div>
+  <div class="footer item">Footer</div>
+</div>
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Complete CSS Grid Example with All Usable Properties</title>
+<style>
+  /* Grid Container */
+  .container {
+    display: grid; /* Defines a grid layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns using repeat() */
+    grid-template-rows: 100px auto 100px; /* 3 rows: fixed, flexible, fixed */
+    grid-template-areas: 
+      "header header header"
+      "sidebar content ads"
+      "footer footer footer";
+    
+    gap: 20px; /* Space between grid items */
+    row-gap: 10px; /* Space between rows */
+    column-gap: 15px; /* Space between columns */
+    
+    justify-items: center; /* Centers items horizontally within their area */
+    align-items: center; /* Centers items vertically within their area */
+    place-items: center; /* Shorthand for both justify-items and align-items */
+    
+    justify-content: space-around; /* Aligns the entire grid horizontally */
+    align-content: space-between; /* Aligns the entire grid vertically */
+    place-content: center; /* Shorthand for both justify-content and align-content */
+    
+    grid-auto-flow: row dense; /* Auto-placement of new items in row direction with dense packing */
+    grid-auto-rows: 150px; /* Sets height for automatically added rows */
+    grid-auto-columns: 200px; /* Sets width for automatically added columns */
+
+    height: 100vh; /* Full viewport height */
+    background-color: #f0f0f0; /* Light background for visibility */
+  }
+
+  /* Grid Items */
+  .header {
+    grid-area: header; /* Assigns this element to the 'header' area */
+    background-color: #ff6b6b;
+  }
+
+  .sidebar {
+    grid-area: sidebar; /* Assigns this element to the 'sidebar' area */
+    background-color: #6bcfff;
+  }
+
+  .content {
+    grid-area: content; /* Assigns this element to the 'content' area */
+    background-color: #6bffb8;
+  }
+
+  .ads {
+    grid-area: ads; /* Assigns this element to the 'ads' area */
+    background-color: #ffd36b;
+  }
+
+  .footer {
+    grid-area: footer; /* Assigns this element to the 'footer' area */
+    background-color: #ffc36b;
+  }
+
+  /* Styling for all items */
+  .item {
+    display: flex; /* Flex layout inside grid items for content alignment */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    padding: 10px; /* Padding inside each grid item */
+    font-weight: bold; /* Bold text for visibility */
+    color: white; /* White text for contrast */
+    border-radius: 10px; /* Rounded corners for a modern look */
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header item">Header</div>
+  <div class="sidebar item">Sidebar</div>
+  <div class="content item">Content Area</div>
+  <div class="ads item">Ads Section</div>
+  <div class="footer item">Footer</div>
+</div>
+
+</body>
+</html>
+-->
+</body>
+</html>
